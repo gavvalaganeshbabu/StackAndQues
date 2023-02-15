@@ -26,6 +26,25 @@ namespace StackAndQues
             top = newNode;
             Console.WriteLine(" Pushed to Stack value =" + data);
         }
+        public void peak()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine($"{this.top.data} is the Top of the Stack");
+        }
+        public void pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine($"Item Poped is {this.top.data}");
+            top = top.next;
+        }
 
         public void display()
         {

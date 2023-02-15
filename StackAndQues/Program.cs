@@ -12,6 +12,13 @@ namespace StackAndQues
             stack.push(69);
             stack.push(89);
             stack.display();
+            stack.peak();
+            stack.pop();
+            stack.peak();
+            stack.pop();
+            stack.peak();
+            stack.pop();
+            stack.display();
         }
     }
 }
