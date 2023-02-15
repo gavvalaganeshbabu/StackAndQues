@@ -7,18 +7,18 @@ namespace StackAndQues
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Stack And Ques Application");
-            Stack stack = new Stack();
-            stack.push(78);
-            stack.push(69);
-            stack.push(89);
-            stack.display();
-            stack.peak();
-            stack.pop();
-            stack.peak();
-            stack.pop();
-            stack.peak();
-            stack.pop();
-            stack.display();
+
+            Ques queue = new Ques();
+            queue.Enqueue(45);
+            queue.Enqueue(89);
+            queue.Enqueue(56);
+            queue.display();
+            queue.Dequeue();
+            queue.display();
+            queue.Dequeue();
+            queue.display();
+            queue.Dequeue();
+            queue.display();
         }
     }
 }
